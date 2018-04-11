@@ -1,5 +1,7 @@
+# Postgres with ssl enabled
+# Uses a self signed cert, not for production use
 FROM postgres:9.5
-MAINTAINER https://github.com/muccg/
+LABEL maintainer "https://github.com/muccg/"
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
